@@ -1,4 +1,4 @@
-# Gomoku
+# What is Gomoku
 Gomoku (Five in a Row), is an abstract strategy board game that is played using 15 x 15 grid intersections and traditionally black and white stones. Each of the two players alternate turns placing a piece of their color on an empty intersection. The winner is the first player to form a straight chain of exactly five pieces horizontally, vertically, or diagonally.
 
 # Implementation 
