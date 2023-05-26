@@ -1,2 +1,7 @@
 # Gomoku
-Gomoku Game MIPS Program - Assembly | Java
+Gomoku (Five in a Row), is an abstract strategy board game that is played using 15 x 15 grid intersections and traditionally black and white stones. Each of the two players alternate turns placing a piece of their color on an empty intersection. The winner is the first player to form a straight chain of exactly five pieces horizontally, vertically, or diagonally.
+
+# Implementation 
+The Gomoku game is written in MIPS assembly for the MARS simulator. The program is separated into 13 different functions that allow for abstraction to handle the different formats a computer or player will indicate their board space with. The essential part concerning data is the game board, which is saved in memory as 225 bytes to represent the 15x15 array displayed in the output section. Additional global variables playerChar, computerChar, emptyChar are used throughout modules for write operations that save moves or read operations that decide branches. Finally as part of the board display, there is the storedMoves String array of all valid moves with an associated movesCount holding the length of that array.
+
+The module filenames are based off of their precedence for running the program, with “01-main” being the base file to assemble and run. The first functions set up the game characters and the board, allowing the lower abstracted functions to perform independently based on that data or combine in different ways to handle both the computer-generated move and player’s move. Throughout the program, looping is often required due to input validation or going through the board array in memory using a “for loop structure.”
